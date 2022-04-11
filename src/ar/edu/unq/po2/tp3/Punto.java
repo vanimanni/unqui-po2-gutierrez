@@ -8,6 +8,7 @@ public class Punto {
 		super();
 		this.setXY(x,y);
 	}
+	
 
 	public void setXY(float x, float y) {
 		this.x=x;
