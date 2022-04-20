@@ -39,4 +39,11 @@ public class MultioperadorTestCase {
 
 		assertEquals(12, multioperador.multiplicar(numeros));
 	}
+	
+	@Test
+	public void restar2Test() {
+
+		assertEquals(-6, multioperador.restar2(numeros));
+	}
+	
 }
