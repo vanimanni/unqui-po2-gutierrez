@@ -38,6 +38,10 @@ public class Point {
 		this.y = y;
 	}
 
-
+	@Override
+	public boolean equals(Object obj) {
+		Point punto = (Point) obj;
+		return this.getX() == punto.getX() && this.getY() == punto.getY();
+	}
 
 }
