@@ -1,11 +1,11 @@
 package ar.edu.unq.po2.tp3;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import java.util.ArrayList;
 
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 public class MultioperadorTestCase {
 
@@ -13,7 +13,7 @@ public class MultioperadorTestCase {
 
 	Multioperador multioperador;
 
-	@Before
+	@BeforeEach
 	public void setUp() {
 		numeros = new ArrayList<>();
 		numeros.add(1);

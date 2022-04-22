@@ -1,9 +1,9 @@
 package ar.edu.unq.po2.tp3;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 public class CounterTestCase {
 	private Counter counter;
@@ -13,7 +13,7 @@ public class CounterTestCase {
 	 *
 	 * @throws Exception
 	 */
-	@Before
+	@BeforeEach
 	public void setUp() throws Exception {
 		// Se crea el contador
 		counter = new Counter();
@@ -42,7 +42,8 @@ public class CounterTestCase {
 
 	}
 
-	/** Verifica la cantidad de impares
+	/**
+	 * Verifica la cantidad de impares
 	 */
 	@Test
 	public void testOddNumbers() {
@@ -51,7 +52,9 @@ public class CounterTestCase {
 		// I check the amount is the expected one
 		assertEquals(9, amount);
 	}
-	/** Verifica la cantidad de de multiplos de cierto numero
+
+	/**
+	 * Verifica la cantidad de de multiplos de cierto numero
 	 */
 	@Test
 	public void testMultiplesOfNumbers() {

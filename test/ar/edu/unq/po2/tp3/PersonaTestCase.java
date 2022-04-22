@@ -1,20 +1,20 @@
 package ar.edu.unq.po2.tp3;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 public class PersonaTestCase {
 	private Persona persona1;
 	private Persona persona2;
 	
-	@Before
+	@BeforeEach
 	public  void setUp() throws ParseException {
 		
 		 
