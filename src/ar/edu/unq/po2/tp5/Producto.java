@@ -1,6 +1,6 @@
 package ar.edu.unq.po2.tp5;
 
-public class Producto {
+public class Producto implements Facturable {
 	private double precioBase;
 	private double iva;
 	private int stock;
@@ -37,13 +37,18 @@ public class Producto {
 	}
 
 	public double getPrecioFinal() {
-		return this.getPrecioBase()*(1 +this.getIva()/100);
+		return this.getPrecioBase() * (1 + this.getIva() / 100);
 	}
 
 	public void disminuirStock() {
 		this.stock--;
-		
-		
+
+	}
+
+	@Override
+	public void procesarPago() {
+		this.disminuirStock();
+
 	}
 
 }
