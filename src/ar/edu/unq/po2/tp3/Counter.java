@@ -1,6 +1,7 @@
 package ar.edu.unq.po2.tp3;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Counter {
 
@@ -25,6 +26,15 @@ public class Counter {
 
 	public int contarMultiplo(int nro) {
 		return (int) numeros.stream().filter(i -> i % nro == 0).count();
+	}
+	
+	public void addAllNumero(List<Integer> listnumeros) {
+		this.numeros.addAll(listnumeros);
+	}
+
+	public void vaciarNumeros() {
+		this.numeros = new ArrayList<Integer>();
+		
 	}
 
 }
