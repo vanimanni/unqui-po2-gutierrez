@@ -11,13 +11,13 @@ class ProductoPrimeraNecesidadTest {
 	
 	@BeforeEach
 		public void setUp() {
-		arroz = new ProductoPrimeraNecesidad("Arroz", 10.0, true);
-		leche = new ProductoPrimeraNecesidad("Leche", 150.0, true);
+		arroz = new ProductoPrimeraNecesidad("Arroz", 10.0, true,11.0);
+		leche = new ProductoPrimeraNecesidad("Leche", 150.0, true,8.0);
 	}
 	
 	@Test
 	void testDescuentoPrimeraNecesidad() {
-		assertEquals(arroz.getPrecio(), 9.0);
+		assertEquals(arroz.getPrecio(), 8.9);
 	}
 
 }
