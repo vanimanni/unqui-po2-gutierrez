@@ -32,4 +32,8 @@ public class Ingreso {
 	public void setMonto(double monto) {
 		this.monto = monto;
 	}
+	
+	public double getMontoImponible() {
+		return this.getMonto();
+	}
 }
